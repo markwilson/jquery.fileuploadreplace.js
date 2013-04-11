@@ -1,0 +1,13 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="jquery.fileuploadreplace.js"></script>
+</head>
+<body>
+    <a href="javascript:void;" id="file-replace" style="display: none">Choose a file</a>
+    <input type="file" name="file" data-replace="file-replace" />
+    <script type="text/javascript">
+        $(':file').fileUploadReplace();
+    </script>
+</body>
+</html>
