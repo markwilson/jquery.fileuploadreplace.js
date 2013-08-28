@@ -7,7 +7,11 @@
     <a href="javascript:void;" id="file-replace" style="display: none">Choose a file</a>
     <input type="file" name="file" data-replace="file-replace" />
     <script type="text/javascript">
-        $(':file').fileUploadReplace();
+        $(':file').fileUploadReplace({
+            onchange: function (e) {
+                alert('Selected ' + e.currentTarget.value.replace(/C:\\fakepath\\/, ''));
+            }
+        });
     </script>
 </body>
 </html>
